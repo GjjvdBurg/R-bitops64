@@ -5,7 +5,7 @@ Simple implementation of bitwise operators for integer64 types in R.
 
 Limitations
 -----------
-- `bitops64` uses the `R` package `bit64` to work with the `integer64` type.  
+- `bitops64` uses the `R` package `bit64` to work with the `integer64` type. 
   Conversion to and from this type is limited, so in reality only integers up 
 to `2^53` are supported.
 
@@ -17,11 +17,14 @@ Usage
 
 Examples of usage (see also `tests.R`):
 
-    source('bitops64.R')
-    
-    a <- 2704856913185604
-    b <- 4537109783011532
-    result <- bAnd(a, b)
+```r
+> source('bitops64.R')
+> a <- 2704856913185604
+> b <- 4537109783011532
+> bAnd(a, b)
+integer64
+[1] 30820960567364
+```
 
 The following functions are included:
 
